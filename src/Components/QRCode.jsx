@@ -38,14 +38,18 @@ export default function QRCode() {
         })
     }
   return (
-    <div className='flex flex-col justify-center items-center h-screen'>
+    <div className='flex flex-col justify-center items-center h-screen bg-cyan-100'>
         <h1 className='p-5 text-xl font-medium uppercase text-cyan-800'>QR Code Generator</h1>
+        <div>
         {
             loading && <p>Please wait....</p>
         }
         {
             img && <img src={img}  alt="QR Code Image" className='border border-black' />
         }
+
+        </div>
+        
         
 
         <div className='py-10 md:p-10 w-full md:w-3/4 lg:w-3/5'>
